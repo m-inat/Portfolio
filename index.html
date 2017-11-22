@@ -5,74 +5,85 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>PORTFOLIO | Mitsunori Tani</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <nav>
       <ul>
-        <li><a href=""><img srcset="./images/logo/profile_logo@2x.png 2x" alt="logo"><span>Profile</span></a></li>
-        <li><a href=""><img srcset="./images/logo/work_logo@2x.png 2x" alt="logo"><span>Work</span></a></li>
-        <li><a href=""><img srcset="./images/logo/study_logo@2x.png 2x" alt="logo"><span>Study</span></a></li>
+        <li><a href="#prof" class="scrollable"><img srcset="./images/logo/profile_logo@2x.png 2x" alt="logo"><span>Profile</span></a></li>
+        <li><a href="#work" class="scrollable"><img srcset="./images/logo/work_logo@2x.png 2x" alt="logo"><span>Work</span></a></li>
+        <li><a href="#study" class="scrollable"><img srcset="./images/logo/study_logo@2x.png 2x" alt="logo"><span>Study</span></a></li>
       </ul>
     </nav>
     <div>
-      <h1>PORT<span>FOLIO</span></h1>
+      <h1><a href="#header" class="scrollable">PORT<span>FOLIO</span></a></h1>
       <span>Mitsunori Tani</span>
     </div>
-    <span class="scroll">SCROLL</span>
+    <span class="scroll"><a href="#prof" class="scrollable">SCROLL</a></span>
   </header>
   <main>
-    <section class="prof">
+    <section id="prof" class="nav_wrap">
+      <div class="prof_wrap">
+        <h2>Profile</h2>
+        <dl>
+          <dt>Name</dt>
+          <dt>Birth</dt>
+          <dt>Sign of the zodiac</dt>
+          <dt>Blood type</dt>
+          <dt>Background</dt>
+        </dl>
+      </div>
+      <!-- /.prof_wrap -->
       <nav>
         <ul>
           <li class="now">Profile</li>
-          <li><a href="">Skills / Self introduction</a></li>
+          <li><a href="#skill" class="scrollable">Skills / Self introduction</a></li>
         </ul>
       </nav>
     </section>
-    <section class="skill">
+    <section id="skill" class="nav_wrap">
       <nav>
         <ul>
-          <li><a href="">Profile</a></li>
+          <li><a href="#prof" class="scrollable">Profile</a></li>
           <li class="now">Skills / Self introduction</li>
         </ul>
       </nav>
     </section>
     <!-- /.skill -->
-    <section class="work top">
+    <section id="work">
       <h2>WORK<span>Client Work</span></h2>
-      <span class="scroll">SCROLL</span>
+      <span class="scroll"><a href="#mockup" class="scrollable">SCROLL</a></span>
     </section>
     <!-- /.work -->
-    <section class="work mockup">
+    <section id="mockup">
       <h3>Work</h3>
-      <p><img srcset="./images/mockup/client_work_mockup@2x.jpg 2x" alt="魚ツキサイトmockup"></p>
+      <p><img srcset="./images/mockup/client_work_mockup2@2x.jpg 2x" alt="魚ツキサイトmockup"></p>
       <div class="btn">
-        <a href="">Site</a>
-        <a href="">Git</a>
+        <a href="http://uotsuki.html.xdomain.jp/">Site</a>
+        <a href="https://github.com/m-inat/UOTUSKI.git">Git</a>
       </div>
       <!-- /.btn -->
     </section>
     <!-- /.work_mockup -->
-    <section class="work discuss">
+    <section id="discuss" class="work nav_wrap">
       <h3>Discussion and design</h3>
       <nav>
         <ul>
-          <li><a href="">Work</a></li>
+          <li><a href="#mockup" class="scrollable">Work</a></li>
           <li class="now">Discussion</li>
-          <li><a href="">RDD</a></li>
-          <li><a href="">Presentation</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">After that...</a></li>
+          <li><a href="#rdd" class="scrollable">RDD</a></li>
+          <li><a href="#presen" class="scrollable">Presentation</a></li>
+          <li><a href="#work_ui" class="scrollable">UI design</a></li>
+          <li><a href="#after" class="scrollable">After that...</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.discuss -->
-    <section class="work rdd">
+    <section id="rdd" class="work nav_wrap">
       <h3>RDD</h3>
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -104,17 +115,17 @@
       <!-- /.swiper-container -->
       <nav>
         <ul>
-          <li><a href="">Work</a></li>
-          <li><a href="">Discussion</a></li>
+          <li><a href="#mockup" class="scrollable">Work</a></li>
+          <li><a href="#discuss" class="scrollable">Discussion</a></li>
           <li class="now">RDD</li>
-          <li><a href="">Presentation</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">After that...</a></li>
+          <li><a href="#presen" class="scrollable">Presentation</a></li>
+          <li><a href="#work_ui" class="scrollable">UI design</a></li>
+          <li><a href="#after" class="scrollable">After that...</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.rdd -->
-    <section class="work presen">
+    <section id="presen" class="work nav_wrap">
       <h3>Presentation</h3>
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -178,282 +189,249 @@
       <!-- /.swiper-container -->
       <nav>
         <ul>
-          <li><a href="">Work</a></li>
-          <li><a href="">Discussion</a></li>
-          <li><a href="">RDD</a></li>
+          <li><a href="#mockup" class="scrollable">Work</a></li>
+          <li><a href="#discuss" class="scrollable">Discussion</a></li>
+          <li><a href="#rdd" class="scrollable">RDD</a></li>
           <li class="now">Presentation</li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">After that...</a></li>
+          <li><a href="#work_ui" class="scrollable">UI design</a></li>
+          <li><a href="#after" class="scrollable">After that...</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.presen -->
-    <section class="work ui">
+    <section id="work_ui">
       <h3>UI design</h3>
       <div class="work_ui_img">
-        <p><img srcset="./images/mockup/client_work_ui@2x.png 2x" alt="魚ツキ スマホUI"></p>
+        <p><img srcset="./images/mockup/client_work_ui2@2x.png 2x" alt="魚ツキ スマホUI"></p>
         <p>Top page<span>navigation</span></p>
         <p>Top page<span>navigation & footer</span></p>
         <p>Sub page<span>header</span></p>
         <p>Sub page<span>navigation & footer</span></p>
       </div>
       <!-- /.work_ui_img -->
-      <nav>
-        <ul>
-          <li><a href="">Work</a></li>
-          <li><a href="">Discussion</a></li>
-          <li><a href="">RDD</a></li>
-          <li><a href="">Presentation</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">After that...</a></li>
-        </ul>
-      </nav>
     </section>
     <!-- /.work_ui -->
-    <section class="work after">
+    <section id="after" class="work nav_wrap">
       <h3>After that...</h3>
       <nav>
         <ul>
-          <li><a href="">Work</a></li>
-          <li><a href="">Discussion</a></li>
-          <li><a href="">RDD</a></li>
-          <li><a href="">Presentation</a></li>
-          <li><a href="">UI design</a></li>
+          <li><a href="#mockup" class="scrollable">Work</a></li>
+          <li><a href="#discuss" class="scrollable">Discussion</a></li>
+          <li><a href="#rdd" class="scrollable">RDD</a></li>
+          <li><a href="#presen" class="scrollable">Presentation</a></li>
+          <li><a href="#work_ui" class="scrollable">UI design</a></li>
           <li class="now">After that...</li>
         </ul>
       </nav>
     </section>
     <!-- /.after -->
-    <section class="study">
+    <section id="study" class="study">
       <h2>STUDY</h2>
-      <span class="scroll">SCROLL</span>
+      <span class="scroll"><a href="#form" class="scrollable">SCROLL</a></span>
     </section>
     <!-- /.study -->
-    <section class="form">
+    <section id="form">
       <h3>Questionnaire form</h3>
-      <p><img srcset="./images/mockup/form_mockup@2x.jpg 2x" alt="アンケートフォームmockup"></p>
+      <p><img srcset="./images/mockup/form_mockup2@2x.jpg 2x" alt="アンケートフォームmockup"></p>
       <div class="btn">
-        <a href="">Site</a>
-        <a href="">Git</a>
+        <a href="http://inat.php.xdomain.jp/form/form.html">Site</a>
+        <a href="https://github.com/m-inat/Form.git">Git</a>
       </div>
       <!-- /.btn -->
     </section>
     <!-- /.form -->
-    <section class="form2">
+    <section class="form study nav_wrap">
       <h3>Questionnaire form</h3>
       <video src="video/form.mp4" poster="./images/poster/form-poster.png" preload="metadata" controls autoplay loop></video>
       <nav>
         <ul>
           <li class="now">Form</li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.form2 -->
-    <section class="clinic">
+    <section id="clinic">
       <h3>Dental clinic</h3>
-      <p><img srcset="./images/mockup/clinic_mockup.jpg 2x" alt="歯科医院mockup"></p>
+      <p><img srcset="./images/mockup/clinic_mockup2.jpg 2x" alt="歯科医院mockup"></p>
       <div class="btn">
-        <a href="">Site</a>
-        <a href="">Git</a>
+        <a href="./dental_clinic/clinic.html">Site</a>
+        <a href="https://github.com/m-inat/Dental-Clinic.git">Git</a>
       </div>
       <!-- /.btn -->
     </section>
     <!-- /.clinic -->
-    <section class="clinic2">
+    <section class="clinic study nav_wrap">
       <h3>Dental clinic</h3>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
           <li class="now">Clinic</li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.clinic2 -->
-    <section class="trace">
+    <section id="trace">
       <h3>Trace</h3>
-      <p><img srcset="./images/mockup/kibin_mockup@2x.jpg 2x" alt="KIBIN mockup"></p>
+      <p><img srcset="./images/mockup/kibin_mockup2@2x.jpg 2x" alt="KIBIN mockup"></p>
       <div class="btn">
-        <a href="">Site</a>
-        <a href="">Git</a>
+        <a href="./KIBIN/kibin.html">Site</a>
+        <a href="https://github.com/m-inat/KIBIN.git">Git</a>
       </div>
       <!-- /.btn -->
     </section>
     <!-- /.trace -->
-    <section class="trace2">
+    <section class="trace study nav_wrap">
       <h3>Trace</h3>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
           <li class="now">Trace</li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.trace2 -->
-    <section class="group">
+    <section id="group">
       <h3>Group work</h3>
-      <p><img srcset="./images/mockup/group_mockup@2x.jpg 2x" alt="group work mockup"></p>
+      <p><img srcset="./images/mockup/group_mockup2@2x.jpg 2x" alt="group work mockup"></p>
       <!-- /.btn -->
     </section>
     <!-- /.group -->
-    <section class="group2">
+    <section class="group study nav_wrap">
       <h3>Group work</h3>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
           <li class="now">Group work</li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.group2 -->
-    <section class="mobile_ui">
-      <h3>UI design</h3>
-      <p><img srcset="./images/ui/ui1@2x.png 2x" alt="ui design mockup"></p>
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
+    <section id="mobile_ui" class="mobile_ui">
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#01&nbsp;&nbsp;&nbsp;1 / 5</h3>
+      <div class="ui_img_wrap">
+        <p><img srcset="./images/ui/ui1-2@2x.png 2x" alt="ui design mockup"></p>
+        <p>Top</p>
+        <p>Sign in</p>
+        <p>Search</p>
+        <p>Choose</p>
+      </div>
+      <!-- /.ui_img_wrap -->
     </section>
     <!-- /.ui -->
     <section class="mobile_ui">
-      <h3>UI design</h3>
-      <p><img srcset="./images/ui/ui2@2x.png 2x" alt="ui design mockup"></p>
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#01&nbsp;&nbsp;&nbsp;2 / 5</h3>
+      <div class="ui_img_wrap">
+        <p><img srcset="./images/ui/ui2-2@2x.png 2x" alt="ui design mockup"></p>
+        <p>Order</p>
+        <p>Hotel info</p>
+        <p>About<span>a room</span></p>
+        <p>Request</p>
+      </div>
+      <!-- /.ui_img_wrap -->
     </section>
     <!-- /.ui -->
     <section class="mobile_ui">
-      <h3>UI design</h3>
-      <p><img srcset="./images/ui/ui3@2x.png 2x" alt="ui design mockup"></p>
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#01&nbsp;&nbsp;&nbsp;3 / 5</h3>
+      <div class="ui_img_wrap">
+        <p class="flex"><img srcset="./images/ui/ui3-2@2x.png 2x" alt="ui design mockup"><img srcset="./images/ui/ui3-2-layer@2x.png 2x" alt="ui design mockup"></p>
+        <p>Personal<span>info</span></p>
+        <p>Completed</p>
+        <p>Account<span>unlock</span></p>
+        <p>Main</p>
+      </div>
+      <!-- /.ui_img_wrap -->
     </section>
     <!-- /.ui -->
     <section class="mobile_ui">
-      <h3>UI design</h3>
-      <p><img srcset="./images/ui/ui4@2x.png 2x" alt="ui design mockup"></p>
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#01&nbsp;&nbsp;&nbsp;4 / 5</h3>
+      <div class="ui_img_wrap">
+        <p class="flex"><img srcset="./images/ui/ui4-2@2x.png 2x" alt="ui design mockup"><img srcset="./images/ui/ui4-2-layer@2x.png 2x" alt="ui design mockup"></p>
+        <p>Orders</p>
+        <p>Food</p>
+        <p>Drink</p>
+        <p>Taxi</p>
+      </div>
+      <!-- /.ui_img_wrap -->
     </section>
     <!-- /.ui -->
     <section class="mobile_ui">
-      <h3>UI design</h3>
-      <p><img srcset="./images/ui/ui5@2x.png 2x" alt="ui design mockup"></p>
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#01&nbsp;&nbsp;&nbsp;5 / 5</h3>
+      <div class="ui_img_wrap">
+        <p><img srcset="./images/ui/ui5-2@2x.png 2x" alt="ui design mockup"></p>
+        <p>My order</p>
+        <p>Services</p>
+        <p>Calendar</p>
+        <p>Registration<span>a card</span></p>
+      </div>
+      <!-- /.ui_img_wrap -->
     </section>
     <!-- /.ui -->
-    <section class="ui1-2">
-      <h3>UI design</h3>
+    <section class="ui1-2 study nav_wrap">
+      <h3>Prototype with inVision</h3>
       <video src="video/prototype.mp4" poster="./images/poster/poster@2x.jpg" preload="metadata" controls autoplay loop></video>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
           <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.ui1-2 -->
-    <section class="ui2">
-      <h3>UI design</h3>
-      <p><img srcset="./images/ui/ui-2@2x.png 2x" alt="ui design mockup"></p>
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
+    <section class="mobile_ui">
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#02&nbsp;&nbsp;&nbsp;1 / 2</h3>
+      <div class="ui_img_wrap2">
+      <p><img srcset="./images/ui/ui-2-2@2x.png 2x" alt="ui design mockup"></p>
+      <p>Top</p>
+      <p>Account</p>
+      <p>Book1</p>
+      <p>Book2</p>
+      <p>Book3</p>
+    </div>
+    <!-- /.ui_img_wrap2 -->
     </section>
     <!-- /.ui2 -->
-    <section class="ui2-2">
-      <h3>UI design</h3>
+    <section class="ui2-2 study nav_wrap">
+      <h3>Mobile App UI design&nbsp;&nbsp;&nbsp;#02&nbsp;&nbsp;&nbsp;2 / 2</h3>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
           <li class="now">UI design</li>
-          <li><a href="">Banner</a></li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.ui2-2 -->
-    <section class="banner">
+    <section id="banner" class="banner">
       <h3>Banner</h3>
       <div class="flex">
         <div>
@@ -472,13 +450,13 @@
       <!-- /.flex -->
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
           <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
@@ -502,13 +480,13 @@
       <!-- /.flex -->
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
           <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
@@ -530,17 +508,6 @@
         </div>
       </div>
       <!-- /.flex -->
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
     </section>
     <!-- /.banner -->
     <section class="banner">
@@ -562,13 +529,13 @@
       <!-- /.flex -->
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
           <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
@@ -590,17 +557,6 @@
         </div>
       </div>
       <!-- /.flex -->
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
     </section>
     <!-- /.banner -->
     <section class="banner">
@@ -622,13 +578,13 @@
       <!-- /.flex -->
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
           <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
@@ -650,17 +606,6 @@
         </div>
       </div>
       <!-- /.flex -->
-      <nav>
-        <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
-        </ul>
-      </nav>
     </section>
     <!-- /.banner -->
     <section class="banner">
@@ -682,42 +627,42 @@
       <!-- /.flex -->
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
           <li class="now">Banner</li>
-          <li><a href="">Text books</a></li>
+          <li><a href="#text" class="scrollable">Text books</a></li>
         </ul>
       </nav>
     </section>
     <!-- /.banner -->
-    <section class="text">
+    <section id="text" class="text">
       <h3>Text books & Reference sites</h3>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">Banner</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
           <li class="now">Text books</li>
         </ul>
       </nav>
     </section>
     <!-- /.text -->
-    <section class="text2">
+    <section class="text">
       <h3>Text books & Reference sites</h3>
       <nav>
         <ul>
-          <li><a href="">Form</a></li>
-          <li><a href="">Clinic</a></li>
-          <li><a href="">Trace</a></li>
-          <li><a href="">Group work</a></li>
-          <li><a href="">UI design</a></li>
-          <li><a href="">Banner</a></li>
+          <li><a href="#form" class="scrollable">Form</a></li>
+          <li><a href="#clinic" class="scrollable">Clinic</a></li>
+          <li><a href="#trace" class="scrollable">Trace</a></li>
+          <li><a href="#group" class="scrollable">Group work</a></li>
+          <li><a href="#mobile_ui" class="scrollable">UI design</a></li>
+          <li><a href="#banner" class="scrollable">Banner</a></li>
           <li class="now">Text books</li>
         </ul>
       </nav>
@@ -725,26 +670,15 @@
     <!-- /.text2 -->
     <section class="footer">
       <h4>Thank you for taking the time<span>to watch my portfolio.</span></h4>
-      <div class="top_btn"><a href="">TOP</a></div>
+      <div class="top_btn"><a href="#">TOP</a></div>
       <!-- /.btn -->
     </section>
     <!-- /.footer -->
   </main>
   <script src="./js/jquery-3.2.1.min.js"></script>
   <script src="./js/swiper.min.js"></script>
-  <script type="text/javascript">
-    var swiper = new Swiper('.swiper-container', {
-      loop: true, 
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+  <script src="./js/jquery.scrollablelink.js"></script>
+  <script src="./js/my-script.js"></script>
 </body>
 
 </html>
