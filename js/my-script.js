@@ -12,12 +12,15 @@ var swiper = new Swiper('.swiper-container', {
 });
 
 $(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= $('header').height()) {
-      $('h1').addClass('on');
-    } else {
+  $('header').prepend('<div class="layer"></div>');
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= $('header').height()) {
+        $('h1').addClass('on');
+        } else {
       $('h1').removeClass('on');
-    }
+      }
+
   });
 
   $('.top_btn a').click(function () {
@@ -27,5 +30,4 @@ $(function () {
       return false;
     });
 
-  $('header').prepend('<div class="layer"></div>');
 });
